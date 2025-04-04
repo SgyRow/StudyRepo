@@ -7,7 +7,12 @@ def convert_meters(value_meters):
         'Дюймы': 39.3701,
         'Футы': 3.28084,
         'Ярды': 1.09361,
-        'Мили': 0.000621371
+        'Мили': 0.000621371,
+        'Древнеримские мили': 0.0006747638,
+        'Сухопутные лье': 0.0002250023,
+        'Русские мили': 0.0001339118
+
+
     }
     return {unit: value_meters * factor for unit, factor in conversion_units.items()}
 
@@ -24,6 +29,10 @@ def print_results(meters, converted):
     print(f"  Футы:  {converted['Футы']:.2f}")
     print(f"  Ярды:  {converted['Ярды']:.2f}")
     print(f"  Мили:  {converted['Мили']:.6f}")
+    print("\nПрочие единицы измерения длины:")
+    print(f"  Древнеримские мили: {converted['Древнеримские мили']:.6f}")
+    print(f"  Сухопутные лье:  {converted['Сухопутные лье']:.6f}")
+    print(f"  Русские мили:  {converted['Русские мили']:.6f}")
     print("="*35 + "\n")
 
 def main():
