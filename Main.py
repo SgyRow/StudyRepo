@@ -35,7 +35,6 @@ def print_results(meters, converted):
     print(f"  Мили:  {converted['Мили']:.6f}")
     print("\nПрочие единицы измерения длины:")
     print(f"  Древнеримские мили: {converted['Древнеримские мили']:.6f}")
-    print(f"  Сухопутные лье:  {converted['Сухопутные лье']:.6f}")
     print(f"  Русские мили:  {converted['Русские мили']:.6f}")
     print("="*35 + "\n")
 
