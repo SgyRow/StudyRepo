@@ -1,4 +1,10 @@
-def convert_meters(value_meters):
+def convert_meters(value_meters) -> dict:
+    """
+    Конвертирует метры в различные единицы измерения расстояния.
+    
+    @param value_meters: Значение в метрах.
+    @return: Словарь с конвертированными значениями.
+    """
     conversion_units = {
         'Километры': 0.001,
         'Метры': 1,
@@ -18,7 +24,13 @@ def convert_meters(value_meters):
     }
     return {unit: value_meters * factor for unit, factor in conversion_units.items()}
 
-def print_results(meters, converted):
+def print_results(meters, converted) -> None:
+    """
+    Выводит результаты конвертации в удобочитаемом формате.
+    
+    @param meters: Исходное значение в метрах.
+    @param converted: Словарь с конвертированными значениями.
+    """
     print(f"\nРезультаты конвертации {meters} м:")
     print("="*35)
     print("Метрическая система:")
@@ -38,7 +50,10 @@ def print_results(meters, converted):
     print(f"  Русские мили:  {converted['Русские мили']:.6f}")
     print("="*35 + "\n")
 
-def main():
+def main() -> None:
+    """
+    Основная функция для взаимодействия с пользователем.
+    """
     print("Конвертер метров (для выхода введите 'exit')")
     print("-------------------------------------------")
     

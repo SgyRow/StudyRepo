@@ -1,4 +1,4 @@
-from Main import convert_meters
+from src.Main import convert_meters
 
 def test_convert_meters():
     result = convert_meters(1000)
