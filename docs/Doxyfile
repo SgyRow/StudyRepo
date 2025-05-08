@@ -1,6 +1,6 @@
 PROJECT_NAME           = "Конвертер расстояний"
 INPUT                  = ../src
-OUTPUT_DIRECTORY       = ./html
+OUTPUT_DIRECTORY       = ../docs/html
 RECURSIVE              = YES
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
