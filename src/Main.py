@@ -20,7 +20,6 @@ def convert_meters(value_meters) -> dict:
         'Сухопутные лье': 0.0002250023,
         'Русские мили': 0.0001339118
 
-
     }
     return {unit: value_meters * factor for unit, factor in conversion_units.items()}
 
@@ -74,3 +73,5 @@ def main() -> None:
         except Exception as e:
             print(f"Произошла ошибка: {e}")
 
+if __name__ == "__main__":
+    main()
